@@ -57,6 +57,22 @@ body {
 .button:hover {
     background: #007bff;
 }
+/* iPhone-like calendar styles (matching src) */
+.calendar-container { max-width: 720px; margin: 16px auto; padding: 0 12px; }
+.card { background: #fff; border-radius: 14px; box-shadow: 0 2px 6px rgba(0,0,0,0.12); padding: 10px; margin-bottom: 12px; }
+.calendar-header.card { display:flex; align-items:center; justify-content:space-between; padding:8px 12px; }
+.nav-button { background: transparent; border: none; font-size: 22px; width:36px; height:36px; border-radius:18px; display:inline-flex; align-items:center; justify-content:center; cursor:pointer; }
+.nav-button:hover { background: rgba(0,0,0,0.04); }
+.month-year { font-weight:600; font-size:18px; }
+.weekdays { display:grid; grid-template-columns: repeat(7,1fr); text-align:center; padding:6px 4px; }
+.weekday { color:#6b6b6b; font-weight:500; font-size:13px; }
+.dates-grid { display:grid; grid-template-columns: repeat(7,1fr); gap:10px; padding:12px; }
+.date-cell { display:flex; align-items:center; justify-content:center; }
+.date-circle { width:40px; height:40px; border-radius:20px; display:inline-flex; align-items:center; justify-content:center; font-size:14px; color:#111; }
+.date-circle:hover { background: rgba(0,0,0,0.04); cursor:pointer; }
+.date-circle.today { border: 1px solid #007aff; }
+.date-circle.selected { background: #007aff; color:#fff; }
+.date-cell.empty { height:40px; }
 @media (max-width: 600px) {
     .days-container {
         grid-template-columns: repeat(7, 1fr);

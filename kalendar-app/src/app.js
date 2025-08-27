@@ -102,10 +102,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         _onSelect(year, month, day, circleEl) {
+            // clear previous selection
             const prev = this.root.querySelector('.date-circle.selected');
             if (prev) prev.classList.remove('selected');
+
             circleEl.classList.add('selected');
             this.selected = { year, month, day };
+            // small feedback - can be replaced with a detail pane
             console.log('Selected', `${day}-${month+1}-${year}`);
         }
 

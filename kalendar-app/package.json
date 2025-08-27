@@ -1,0 +1,30 @@
+{
+  "name": "kalendar-app",
+  "version": "1.0.0",
+  "description": "A simple calendar application",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'",
+    "test": "echo 'No tests defined'"
+  },
+  "keywords": [
+    "calendar",
+    "web",
+    "application"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "homepage": "https://github.com/yourusername/kalendar-app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/kalendar-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/kalendar-app/issues"
+  }
+}
